@@ -196,8 +196,6 @@
 				D7F9FC632131A6EE00C2B774 /* ContentsView.swift */,
 				D7D8611A21351F8A00562CB0 /* ViewController.storyboard */,
 				D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */,
-				D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */,
-				D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */,
 				D7F23704213A6AB40003828E /* followList */,
 			);
 			path = Mypage;
@@ -224,6 +222,8 @@
 		D7F23704213A6AB40003828E /* followList */ = {
 			isa = PBXGroup;
 			children = (
+				D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */,
+				D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */,
 			);
 			path = followList;
 			sourceTree = "<group>";

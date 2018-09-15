@@ -31,39 +31,7 @@ class ContentsView: UIView {
     let underlineLayer = CAShapeLayer()
     let selectItemLineLayer = CALayer()
     var segmentItemWidth:CGFloat = 0  //後で使うので宣言しておきます。
-    
-/*    override func layoutSubviews() {
-        //選択されたsegmentItemの下線部の実現
-        segmentItemWidth = self.frame.width / 4
-        selectItemLineLayer.backgroundColor = UIColor.black.cgColor
-        let iti = CGFloat(currentIndex) * self.frame.width / 4
-        selectItemLineLayer.frame = CGRect(x: iti, y: 41.0, width: segmentItemWidth , height: 2.5)
 
-        //うっすい下線部の実現
-        underlineLayer.strokeColor = UIColor.gray.cgColor
-        underlineLayer.lineWidth = 0.5
-        let line = UIBezierPath()
-        line.move   (to: CGPoint( x: 0, y: 43.8) ) //始点
-        line.addLine(to: CGPoint( x: self.frame.width, y: 43.8))            //終点
-        line.close()  //線を結ぶ
-        underlineLayer.path = line.cgPath
-
-        segmentedControl.layer.addSublayer(underlineLayer)
-        segmentedControl.layer.addSublayer(selectItemLineLayer)
-
-        //tintとbackgroundの色を変更している
-        segmentedControl.tintColor = UIColor.clear
-        segmentedControl.backgroundColor = UIColor.clear
-        //文字色を変更している
-        let attribute  = [NSAttributedStringKey.foregroundColor:UIColor.darkGray]
-        let attribute2 = [NSAttributedStringKey.foregroundColor:UIColor.black]
-        segmentedControl.setTitleTextAttributes(attribute, for: UIControlState.normal)
-        segmentedControl.setTitleTextAttributes(attribute2, for: UIControlState.selected)
-
-    }
- */
-    
-    
     
     let statusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
     required init(coder aDecoder: NSCoder) {
