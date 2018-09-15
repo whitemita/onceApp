@@ -18,12 +18,20 @@ class MypageViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.estimatedRowHeight = 300
-        tableView.rowHeight = 100  //自動でセルの高さを調節してくれるやつ
-
+//        tableView.rowHeight = UITableViewAutomaticDimension  //自動でセルの高さを調節してくれるやつ
         let nib = UINib(nibName: "FollowListTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "followListCell")
 //        let nib = UINib(nibName: "PostTableViewCell", bundle: nil)
 //        tableView.register(nib, forCellReuseIdentifier: "postCell")
+    }
+    
+    /*
+     セルの高さを設定
+     */
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+        
     }
     
     
