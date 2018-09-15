@@ -54,8 +54,6 @@ extension MypageViewController: UITableViewDataSource {
         
 //         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "followListCell")
 //         cell.textLabel?.text = String(indexPath.row)
-        tableView.rowHeight = UITableViewAutomaticDimension  //自動でセルの高さを調節してくれるやつ
-
         return cell
     }
 
