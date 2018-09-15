@@ -26,16 +26,24 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04a-mF-UeK">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04a-mF-UeK">
                         <rect key="frame" x="245" y="23" width="91" height="35"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.037178461484596359" green="0.24702794628814806" blue="1" alpha="0.67618257705479456" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="JYD-t4-JYA"/>
+                            <constraint firstAttribute="width" constant="91" id="b96-Ws-3RS"/>
+                        </constraints>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="フォロー中">
                             <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="DO2-ii-XmV">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="DO2-ii-XmV">
                         <rect key="frame" x="16" y="11" width="60" height="60"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="22G-YO-PCe"/>
+                            <constraint firstAttribute="width" constant="60" id="ZXS-Ce-U4U"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@UseridLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="522-Gs-hjz">
                         <rect key="frame" x="94" y="42" width="143" height="21"/>
@@ -52,6 +60,12 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="04a-mF-UeK" secondAttribute="trailing" constant="21" id="Eu2-rD-wqV"/>
+                    <constraint firstItem="DO2-ii-XmV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ZHw-Sh-pkd"/>
+                    <constraint firstItem="04a-mF-UeK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="aD6-cC-ceK"/>
+                    <constraint firstItem="DO2-ii-XmV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="fYF-zG-A08"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
