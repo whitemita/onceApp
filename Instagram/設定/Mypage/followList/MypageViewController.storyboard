@@ -12,7 +12,7 @@
         <!--Mypage View Controller-->
         <scene sceneID="1dT-n6-RE6">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="tHF-NM-rgV" customClass="MypageViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MypageViewController" id="tHF-NM-rgV" customClass="MypageViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z9P-RP-Og5"/>
                         <viewControllerLayoutGuide type="bottom" id="ctt-sd-81t"/>

@@ -30,7 +30,7 @@
 		D79A938A20CE543600EC21D5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A938920CE543600EC21D5 /* NavigationBar.swift */; };
 		D7A55BD8212D704D00ABDBAF /* setting_PerInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */; };
 		D7C696A62136EFCF00C5CF1D /* ContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C696A52136EFCF00C5CF1D /* ContentsView.xib */; };
-		D7D8611B21351F8A00562CB0 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D8611A21351F8A00562CB0 /* ViewController.storyboard */; };
+		D7D8611B21351F8A00562CB0 /* MypageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */; };
 		D7F23703213A64AF0003828E /* FollowListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */; };
 		D7F23706213A6E7A0003828E /* FollowListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */; };
 		D7F9FC5C2131A49A00C2B774 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */; };
@@ -67,7 +67,7 @@
 		D79A938920CE543600EC21D5 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting_PerInfo_ViewController.swift; sourceTree = "<group>"; };
 		D7C696A52136EFCF00C5CF1D /* ContentsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsView.xib; sourceTree = "<group>"; };
-		D7D8611A21351F8A00562CB0 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MypageViewController.storyboard; sourceTree = "<group>"; };
 		D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowListTableViewCell.xib; sourceTree = "<group>"; };
 		D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListTableViewCell.swift; sourceTree = "<group>"; };
 		D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
@@ -194,8 +194,6 @@
 				D7F9FC5E2131A69F00C2B774 /* ScrollTabPageViewController.swift */,
 				D7C696A52136EFCF00C5CF1D /* ContentsView.xib */,
 				D7F9FC632131A6EE00C2B774 /* ContentsView.swift */,
-				D7D8611A21351F8A00562CB0 /* ViewController.storyboard */,
-				D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */,
 				D7F23704213A6AB40003828E /* followList */,
 			);
 			path = Mypage;
@@ -222,6 +220,8 @@
 		D7F23704213A6AB40003828E /* followList */ = {
 			isa = PBXGroup;
 			children = (
+				D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */,
+				D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */,
 				D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */,
 				D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */,
 			);
@@ -304,7 +304,7 @@
 				D78DA54E20A7962F00F248CA /* Main.storyboard in Resources */,
 				D78DA5E920AB32B100F248CA /* images.xcassets in Resources */,
 				D7019D7B20D60AF400A91F53 /* GoogleService-Info.plist in Resources */,
-				D7D8611B21351F8A00562CB0 /* ViewController.storyboard in Resources */,
+				D7D8611B21351F8A00562CB0 /* MypageViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

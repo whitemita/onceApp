@@ -67,20 +67,20 @@ extension ScrollTabPageViewController {
     // 別々のviewControllerを設定する場合はvc1&2の読み込み内容を変更する
     func setupViewControllers() {
         // viewContrroller
-        let sb1 = UIStoryboard(name: "ViewController", bundle: nil)
-        let vc1 = sb1.instantiateViewController(withIdentifier: "ViewController")
+        let sb1 = UIStoryboard(name: "MypageViewController", bundle: nil)
+        let vc1 = sb1.instantiateViewController(withIdentifier: "MypageViewController")
 
         // viewContrroller
-        let sb2 = UIStoryboard(name: "ViewController", bundle: nil)
-        let vc2 = sb2.instantiateViewController(withIdentifier: "ViewController")
+        let sb2 = UIStoryboard(name: "MypageViewController", bundle: nil)
+        let vc2 = sb2.instantiateViewController(withIdentifier: "MypageViewController")
         
         // viewContrroller
-        let sb3 = UIStoryboard(name: "ViewController", bundle: nil)
-        let vc3 = sb3.instantiateViewController(withIdentifier: "ViewController")
+        let sb3 = UIStoryboard(name: "MypageViewController", bundle: nil)
+        let vc3 = sb3.instantiateViewController(withIdentifier: "MypageViewController")
         
         // viewContrroller
-        let sb4 = UIStoryboard(name: "ViewController", bundle: nil)
-        let vc4 = sb4.instantiateViewController(withIdentifier: "ViewController")
+        let sb4 = UIStoryboard(name: "MypageViewController", bundle: nil)
+        let vc4 = sb4.instantiateViewController(withIdentifier: "MypageViewController")
 
         pageViewControllers = [vc1, vc2, vc3, vc4]
     }
