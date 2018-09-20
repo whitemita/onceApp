@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="eax-ta-yIZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Toukou List View Controller-->
+        <scene sceneID="rqC-L2-x22">
+            <objects>
+                <viewController storyboardIdentifier="ToukouListViewController" id="eax-ta-yIZ" customClass="ToukouListViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="15N-gI-ZOA"/>
+                        <viewControllerLayoutGuide type="bottom" id="wGk-td-r9y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0BD-Zk-oNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CdH-gG-VGv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eax-ta-yIZ" id="QZr-AM-aGk"/>
+                                    <outlet property="delegate" destination="eax-ta-yIZ" id="hEO-bZ-iYy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CdH-gG-VGv" firstAttribute="bottom" secondItem="wGk-td-r9y" secondAttribute="top" id="4sV-Bc-ci7"/>
+                            <constraint firstAttribute="trailing" secondItem="CdH-gG-VGv" secondAttribute="trailing" id="7LW-yN-Y36"/>
+                            <constraint firstItem="CdH-gG-VGv" firstAttribute="top" secondItem="15N-gI-ZOA" secondAttribute="bottom" id="Pf3-UY-LlJ"/>
+                            <constraint firstItem="wGk-td-r9y" firstAttribute="top" secondItem="CdH-gG-VGv" secondAttribute="bottom" id="cVM-9e-7dn"/>
+                            <constraint firstItem="CdH-gG-VGv" firstAttribute="leading" secondItem="0BD-Zk-oNE" secondAttribute="leading" id="dw5-BX-mee"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ttableView" destination="CdH-gG-VGv" id="4fE-Zp-oJ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2FX-l1-ftI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.5" y="-380.5"/>
+        </scene>
+    </scenes>
+</document>

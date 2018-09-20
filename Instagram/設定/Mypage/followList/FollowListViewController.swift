@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MypageViewController: UIViewController {
+class FollowListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -40,7 +40,7 @@ class MypageViewController: UIViewController {
 
 // MARK: - UITableVIewDataSource
 
-extension MypageViewController: UITableViewDataSource {
+extension FollowListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 100
@@ -67,7 +67,7 @@ extension MypageViewController: UITableViewDataSource {
 
 // MARK: - UIScrollViewDelegate
 
-extension MypageViewController: UITableViewDelegate {
+extension FollowListViewController: UITableViewDelegate {
     /**
      viewControllerへのスクロールを検知
      - parameter scrollView: scrollView
@@ -81,7 +81,7 @@ extension MypageViewController: UITableViewDelegate {
 
 // MARK: - ScrollTabPageViewControllerProtocol
 
-extension MypageViewController: ScrollTabPageViewControllerProtocol {
+extension FollowListViewController: ScrollTabPageViewControllerProtocol {
     
     var scrollTabPageViewController: ScrollTabPageViewController {
         return parent as! ScrollTabPageViewController

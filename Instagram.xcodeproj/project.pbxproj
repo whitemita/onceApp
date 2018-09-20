@@ -12,7 +12,9 @@
 		D71084DF20B47F4D00A69D7D /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71084DE20B47F4D00A69D7D /* TabController.swift */; };
 		D71084E120B484BB00A69D7D /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71084E020B484BB00A69D7D /* postViewController.swift */; };
 		D7524E5C20D631E2008BF377 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7524E5B20D631E2008BF377 /* LoginViewController.swift */; };
-		D77E7175214D609C0047449C /* ShowToukouViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77E7174214D609C0047449C /* ShowToukouViewController.storyboard */; };
+		D764349521538786004B6835 /* ToukouListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764349421538786004B6835 /* ToukouListTableViewCell.swift */; };
+		D764349721538944004B6835 /* ToukouListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764349621538944004B6835 /* ToukouListViewController.swift */; };
+		D77E7175214D609C0047449C /* ToukouListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77E7174214D609C0047449C /* ToukouListViewController.storyboard */; };
 		D78D088D20D9897A00A931A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D088C20D9897900A931A3 /* SignUpViewController.swift */; };
 		D78DA54920A7962F00F248CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78DA54820A7962F00F248CA /* AppDelegate.swift */; };
 		D78DA54B20A7962F00F248CA /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78DA54A20A7962F00F248CA /* TimeLineViewController.swift */; };
@@ -30,12 +32,11 @@
 		D79A938820CE4E9000EC21D5 /* FindNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A938720CE4E9000EC21D5 /* FindNewViewController.swift */; };
 		D79A938A20CE543600EC21D5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A938920CE543600EC21D5 /* NavigationBar.swift */; };
 		D7A55BD8212D704D00ABDBAF /* setting_PerInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */; };
-		D7A8A6C7214F783E001718CB /* ShowToukouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A8A6C6214F783E001718CB /* ShowToukouViewController.swift */; };
 		D7C696A62136EFCF00C5CF1D /* ContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C696A52136EFCF00C5CF1D /* ContentsView.xib */; };
-		D7D8611B21351F8A00562CB0 /* MypageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */; };
+		D7D8611B21351F8A00562CB0 /* FollowListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D8611A21351F8A00562CB0 /* FollowListViewController.storyboard */; };
 		D7F23703213A64AF0003828E /* FollowListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */; };
 		D7F23706213A6E7A0003828E /* FollowListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */; };
-		D7F9FC5C2131A49A00C2B774 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */; };
+		D7F9FC5C2131A49A00C2B774 /* FollowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9FC5B2131A49A00C2B774 /* FollowListViewController.swift */; };
 		D7F9FC5F2131A69F00C2B774 /* ScrollTabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F9FC5D2131A69F00C2B774 /* ScrollTabPageViewController.storyboard */; };
 		D7F9FC602131A69F00C2B774 /* ScrollTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9FC5E2131A69F00C2B774 /* ScrollTabPageViewController.swift */; };
 		D7F9FC652131A6EE00C2B774 /* ContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9FC632131A6EE00C2B774 /* ContentsView.swift */; };
@@ -49,7 +50,10 @@
 		D71084E020B484BB00A69D7D /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		D7503E9E20D4E5FE007EE235 /* Instagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Instagram.entitlements; sourceTree = "<group>"; };
 		D7524E5B20D631E2008BF377 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D77E7174214D609C0047449C /* ShowToukouViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowToukouViewController.storyboard; sourceTree = "<group>"; };
+		D764349321538786004B6835 /* ToukouListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ToukouListTableViewCell.xib; path = "/Users/TomitaYutaro/Desktop/Instagram/Instagram/設定/Mypage/followList/ToukouListTableViewCell.xib"; sourceTree = "<absolute>"; };
+		D764349421538786004B6835 /* ToukouListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToukouListTableViewCell.swift; path = "/Users/TomitaYutaro/Desktop/Instagram/Instagram/設定/Mypage/followList/ToukouListTableViewCell.swift"; sourceTree = "<absolute>"; };
+		D764349621538944004B6835 /* ToukouListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToukouListViewController.swift; sourceTree = "<group>"; };
+		D77E7174214D609C0047449C /* ToukouListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToukouListViewController.storyboard; sourceTree = "<group>"; };
 		D78D088C20D9897900A931A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D78DA54520A7962F00F248CA /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78DA54820A7962F00F248CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,12 +73,11 @@
 		D79A938720CE4E9000EC21D5 /* FindNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNewViewController.swift; sourceTree = "<group>"; };
 		D79A938920CE543600EC21D5 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting_PerInfo_ViewController.swift; sourceTree = "<group>"; };
-		D7A8A6C6214F783E001718CB /* ShowToukouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowToukouViewController.swift; sourceTree = "<group>"; };
 		D7C696A52136EFCF00C5CF1D /* ContentsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsView.xib; sourceTree = "<group>"; };
-		D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MypageViewController.storyboard; sourceTree = "<group>"; };
+		D7D8611A21351F8A00562CB0 /* FollowListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FollowListViewController.storyboard; sourceTree = "<group>"; };
 		D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowListTableViewCell.xib; sourceTree = "<group>"; };
 		D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListTableViewCell.swift; sourceTree = "<group>"; };
-		D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		D7F9FC5B2131A49A00C2B774 /* FollowListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListViewController.swift; sourceTree = "<group>"; };
 		D7F9FC5D2131A69F00C2B774 /* ScrollTabPageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollTabPageViewController.storyboard; sourceTree = "<group>"; };
 		D7F9FC5E2131A69F00C2B774 /* ScrollTabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTabPageViewController.swift; sourceTree = "<group>"; };
 		D7F9FC632131A6EE00C2B774 /* ContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsView.swift; sourceTree = "<group>"; };
@@ -224,12 +227,14 @@
 		D7F23704213A6AB40003828E /* followList */ = {
 			isa = PBXGroup;
 			children = (
-				D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */,
-				D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */,
-				D77E7174214D609C0047449C /* ShowToukouViewController.storyboard */,
-				D7A8A6C6214F783E001718CB /* ShowToukouViewController.swift */,
-				D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */,
+				D7D8611A21351F8A00562CB0 /* FollowListViewController.storyboard */,
+				D7F9FC5B2131A49A00C2B774 /* FollowListViewController.swift */,
 				D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */,
+				D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */,
+				D77E7174214D609C0047449C /* ToukouListViewController.storyboard */,
+				D764349621538944004B6835 /* ToukouListViewController.swift */,
+				D764349321538786004B6835 /* ToukouListTableViewCell.xib */,
+				D764349421538786004B6835 /* ToukouListTableViewCell.swift */,
 			);
 			path = followList;
 			sourceTree = "<group>";
@@ -303,7 +308,7 @@
 			files = (
 				D78DA56B20A7A3F100F248CA /* PostTableViewCell.xib in Resources */,
 				D7F23703213A64AF0003828E /* FollowListTableViewCell.xib in Resources */,
-				D77E7175214D609C0047449C /* ShowToukouViewController.storyboard in Resources */,
+				D77E7175214D609C0047449C /* ToukouListViewController.storyboard in Resources */,
 				D7F9FC5F2131A69F00C2B774 /* ScrollTabPageViewController.storyboard in Resources */,
 				D78DA55320A7962F00F248CA /* LaunchScreen.storyboard in Resources */,
 				D7C696A62136EFCF00C5CF1D /* ContentsView.xib in Resources */,
@@ -311,7 +316,7 @@
 				D78DA54E20A7962F00F248CA /* Main.storyboard in Resources */,
 				D78DA5E920AB32B100F248CA /* images.xcassets in Resources */,
 				D7019D7B20D60AF400A91F53 /* GoogleService-Info.plist in Resources */,
-				D7D8611B21351F8A00562CB0 /* MypageViewController.storyboard in Resources */,
+				D7D8611B21351F8A00562CB0 /* FollowListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78DA58220AB322800F248CA /* DeviseSize.swift in Sources */,
+				D764349721538944004B6835 /* ToukouListViewController.swift in Sources */,
 				D71084DF20B47F4D00A69D7D /* TabController.swift in Sources */,
 				D78DA57F20AB322800F248CA /* Comment.swift in Sources */,
 				D78DA54B20A7962F00F248CA /* TimeLineViewController.swift in Sources */,
@@ -436,11 +442,11 @@
 				D79A938820CE4E9000EC21D5 /* FindNewViewController.swift in Sources */,
 				D78DA54920A7962F00F248CA /* AppDelegate.swift in Sources */,
 				D71084E120B484BB00A69D7D /* postViewController.swift in Sources */,
+				D764349521538786004B6835 /* ToukouListTableViewCell.swift in Sources */,
 				D78D088D20D9897A00A931A3 /* SignUpViewController.swift in Sources */,
 				D78DA58020AB322800F248CA /* Post.swift in Sources */,
 				D7F9FC602131A69F00C2B774 /* ScrollTabPageViewController.swift in Sources */,
-				D7A8A6C7214F783E001718CB /* ShowToukouViewController.swift in Sources */,
-				D7F9FC5C2131A49A00C2B774 /* MypageViewController.swift in Sources */,
+				D7F9FC5C2131A49A00C2B774 /* FollowListViewController.swift in Sources */,
 				D7F9FC652131A6EE00C2B774 /* ContentsView.swift in Sources */,
 				D78DA56A20A7A3F100F248CA /* PostTableViewCell.swift in Sources */,
 				D78DA58120AB322800F248CA /* User.swift in Sources */,
