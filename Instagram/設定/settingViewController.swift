@@ -70,6 +70,12 @@ class settingViewController: UITableViewController {
 
 //                self.performSegue(withIdentifier: "mypageSegue", sender: nil)
             }
+            if indexPath.row == 1 {
+                let storyboard: UIStoryboard = UIStoryboard(name: "ShowToukouViewController", bundle: nil)
+                let nextView = storyboard.instantiateInitialViewController()
+                self.navigationController!.pushViewController(nextView!, animated: true)
+
+            }
         } else if indexPath.section == 1 {
             
             

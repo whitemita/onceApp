@@ -64,11 +64,11 @@ extension ScrollTabPageViewController {
     }
 
     // viewControllerをセットアップ
-    // 別々のviewControllerを設定する場合はvc1&2の読み込み内容を変更する
+    // 別々のviewControllerを設定する場合はvc毎の読み込み内容を変更する
     func setupViewControllers() {
         // viewContrroller
-        let sb1 = UIStoryboard(name: "MypageViewController", bundle: nil)
-        let vc1 = sb1.instantiateViewController(withIdentifier: "MypageViewController")
+        let sb1 = UIStoryboard(name: "ShowToukouViewController", bundle: nil)
+        let vc1 = sb1.instantiateViewController(withIdentifier: "ShowToukouViewController")
 
         // viewContrroller
         let sb2 = UIStoryboard(name: "MypageViewController", bundle: nil)
@@ -198,7 +198,8 @@ extension ScrollTabPageViewController {
      - parameter scroll: 移動した分の座標
      */
     func updateContentOffsetY(scroll: CGFloat) {
-        if let currentIndex = currentIndex, let vc = pageViewControllers[currentIndex] as? ScrollTabPageViewControllerProtocol {
+        if let currentIndex = currentIndex,
+            let vc = pageViewControllers[currentIndex] as? ScrollTabPageViewControllerProtocol {
             vc.scrollView.contentOffset.y += scroll
         }
     }

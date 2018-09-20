@@ -12,6 +12,7 @@
 		D71084DF20B47F4D00A69D7D /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71084DE20B47F4D00A69D7D /* TabController.swift */; };
 		D71084E120B484BB00A69D7D /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71084E020B484BB00A69D7D /* postViewController.swift */; };
 		D7524E5C20D631E2008BF377 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7524E5B20D631E2008BF377 /* LoginViewController.swift */; };
+		D77E7175214D609C0047449C /* ShowToukouViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77E7174214D609C0047449C /* ShowToukouViewController.storyboard */; };
 		D78D088D20D9897A00A931A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D088C20D9897900A931A3 /* SignUpViewController.swift */; };
 		D78DA54920A7962F00F248CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78DA54820A7962F00F248CA /* AppDelegate.swift */; };
 		D78DA54B20A7962F00F248CA /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78DA54A20A7962F00F248CA /* TimeLineViewController.swift */; };
@@ -29,6 +30,7 @@
 		D79A938820CE4E9000EC21D5 /* FindNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A938720CE4E9000EC21D5 /* FindNewViewController.swift */; };
 		D79A938A20CE543600EC21D5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A938920CE543600EC21D5 /* NavigationBar.swift */; };
 		D7A55BD8212D704D00ABDBAF /* setting_PerInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */; };
+		D7A8A6C7214F783E001718CB /* ShowToukouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A8A6C6214F783E001718CB /* ShowToukouViewController.swift */; };
 		D7C696A62136EFCF00C5CF1D /* ContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C696A52136EFCF00C5CF1D /* ContentsView.xib */; };
 		D7D8611B21351F8A00562CB0 /* MypageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */; };
 		D7F23703213A64AF0003828E /* FollowListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */; };
@@ -47,6 +49,7 @@
 		D71084E020B484BB00A69D7D /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		D7503E9E20D4E5FE007EE235 /* Instagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Instagram.entitlements; sourceTree = "<group>"; };
 		D7524E5B20D631E2008BF377 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D77E7174214D609C0047449C /* ShowToukouViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowToukouViewController.storyboard; sourceTree = "<group>"; };
 		D78D088C20D9897900A931A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D78DA54520A7962F00F248CA /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78DA54820A7962F00F248CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		D79A938720CE4E9000EC21D5 /* FindNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNewViewController.swift; sourceTree = "<group>"; };
 		D79A938920CE543600EC21D5 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting_PerInfo_ViewController.swift; sourceTree = "<group>"; };
+		D7A8A6C6214F783E001718CB /* ShowToukouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowToukouViewController.swift; sourceTree = "<group>"; };
 		D7C696A52136EFCF00C5CF1D /* ContentsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsView.xib; sourceTree = "<group>"; };
 		D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MypageViewController.storyboard; sourceTree = "<group>"; };
 		D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowListTableViewCell.xib; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 			children = (
 				D7D8611A21351F8A00562CB0 /* MypageViewController.storyboard */,
 				D7F9FC5B2131A49A00C2B774 /* MypageViewController.swift */,
+				D77E7174214D609C0047449C /* ShowToukouViewController.storyboard */,
+				D7A8A6C6214F783E001718CB /* ShowToukouViewController.swift */,
 				D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */,
 				D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */,
 			);
@@ -297,6 +303,7 @@
 			files = (
 				D78DA56B20A7A3F100F248CA /* PostTableViewCell.xib in Resources */,
 				D7F23703213A64AF0003828E /* FollowListTableViewCell.xib in Resources */,
+				D77E7175214D609C0047449C /* ShowToukouViewController.storyboard in Resources */,
 				D7F9FC5F2131A69F00C2B774 /* ScrollTabPageViewController.storyboard in Resources */,
 				D78DA55320A7962F00F248CA /* LaunchScreen.storyboard in Resources */,
 				D7C696A62136EFCF00C5CF1D /* ContentsView.xib in Resources */,
@@ -432,6 +439,7 @@
 				D78D088D20D9897A00A931A3 /* SignUpViewController.swift in Sources */,
 				D78DA58020AB322800F248CA /* Post.swift in Sources */,
 				D7F9FC602131A69F00C2B774 /* ScrollTabPageViewController.swift in Sources */,
+				D7A8A6C7214F783E001718CB /* ShowToukouViewController.swift in Sources */,
 				D7F9FC5C2131A49A00C2B774 /* MypageViewController.swift in Sources */,
 				D7F9FC652131A6EE00C2B774 /* ContentsView.swift in Sources */,
 				D78DA56A20A7A3F100F248CA /* PostTableViewCell.swift in Sources */,
