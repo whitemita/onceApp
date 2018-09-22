@@ -51,6 +51,22 @@ extension TimeLineViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         
+        func setThumbnailImage(image: UIImage?) {
+            
+            cell.postImage.image = image
+            
+            let constraint = NSLayoutConstraint(
+                item: cell.postImage,
+                attribute:NSLayoutAttribute.height,
+                relatedBy:NSLayoutRelation.equal,
+                toItem: cell.postImage,
+                attribute: NSLayoutAttribute.width,
+                multiplier: (image?.size.height)! / (image?.size.width)!,
+                constant:0)
+            
+            NSLayoutConstraint.activate([constraint])
+        }
+        setThumbnailImage(image: post[indexPath.row].postImage)
         cell.post = post[indexPath.row]
         
         return cell

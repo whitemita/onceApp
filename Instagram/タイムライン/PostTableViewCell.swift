@@ -12,7 +12,6 @@ class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userProfilePic: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var createdAt: UILabel!
     @IBOutlet weak var postText: UILabel!
     @IBOutlet weak var postImage: UIImageView!
     
@@ -31,20 +30,20 @@ class PostTableViewCell: UITableViewCell {
     func updateUI() {                                                      //didsetした時に画面上に表示することをかく
         
         userProfilePic.layer.cornerRadius = userProfilePic.bounds.width/2  //画像を円にする
-        postImage.layer.cornerRadius = 5.0                                 //丸みが5.0
+//        postImage.layer.cornerRadius = 5.0                                 //丸みが5.0
         
         userProfilePic.clipsToBounds = true
-        postImage.clipsToBounds = true                                     //この２行で変更を有効(?)にする
+//        postImage.clipsToBounds = true                                     //この２行で変更を有効(?)にする
      
         userProfilePic.image! = post.user.profileImage
         userNameLabel.text! = post.user.fullName
-        createdAt.text! = post.createdAt
         postImage.image! = post.postImage
         postText.text! = post.postText
         
         currentUserDidLike = post.userDidLike
         
         changeLikeButtonState()           //状態をセットしておく
+        
         
         let image:UIImage = UIImage(data: UIImagePNGRepresentation(post.postImage)! )!
         postImage.image = image
