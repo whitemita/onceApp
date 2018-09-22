@@ -11,6 +11,7 @@
 		D7019D7B20D60AF400A91F53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7019D7A20D60AF400A91F53 /* GoogleService-Info.plist */; };
 		D71084DF20B47F4D00A69D7D /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71084DE20B47F4D00A69D7D /* TabController.swift */; };
 		D71084E120B484BB00A69D7D /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71084E020B484BB00A69D7D /* postViewController.swift */; };
+		D71B1EE021539EFC000C7E68 /* ToukouListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D764349321538786004B6835 /* ToukouListTableViewCell.xib */; };
 		D7524E5C20D631E2008BF377 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7524E5B20D631E2008BF377 /* LoginViewController.swift */; };
 		D764349521538786004B6835 /* ToukouListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764349421538786004B6835 /* ToukouListTableViewCell.swift */; };
 		D764349721538944004B6835 /* ToukouListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764349621538944004B6835 /* ToukouListViewController.swift */; };
@@ -50,7 +51,7 @@
 		D71084E020B484BB00A69D7D /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		D7503E9E20D4E5FE007EE235 /* Instagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Instagram.entitlements; sourceTree = "<group>"; };
 		D7524E5B20D631E2008BF377 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D764349321538786004B6835 /* ToukouListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ToukouListTableViewCell.xib; path = "/Users/TomitaYutaro/Desktop/Instagram/Instagram/設定/Mypage/followList/ToukouListTableViewCell.xib"; sourceTree = "<absolute>"; };
+		D764349321538786004B6835 /* ToukouListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToukouListTableViewCell.xib; sourceTree = "<group>"; };
 		D764349421538786004B6835 /* ToukouListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToukouListTableViewCell.swift; path = "/Users/TomitaYutaro/Desktop/Instagram/Instagram/設定/Mypage/followList/ToukouListTableViewCell.swift"; sourceTree = "<absolute>"; };
 		D764349621538944004B6835 /* ToukouListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToukouListViewController.swift; sourceTree = "<group>"; };
 		D77E7174214D609C0047449C /* ToukouListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToukouListViewController.storyboard; sourceTree = "<group>"; };
@@ -316,6 +317,7 @@
 				D78DA54E20A7962F00F248CA /* Main.storyboard in Resources */,
 				D78DA5E920AB32B100F248CA /* images.xcassets in Resources */,
 				D7019D7B20D60AF400A91F53 /* GoogleService-Info.plist in Resources */,
+				D71B1EE021539EFC000C7E68 /* ToukouListTableViewCell.xib in Resources */,
 				D7D8611B21351F8A00562CB0 /* FollowListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

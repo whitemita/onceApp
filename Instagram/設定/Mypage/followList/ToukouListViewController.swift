@@ -19,11 +19,11 @@ class ToukouListViewController: UIViewController {
         
         ttableView.dataSource = self
         ttableView.delegate = self
-        ttableView.estimatedRowHeight = 123
-        if UITableViewAutomaticDimension > 123 {
+        ttableView.estimatedRowHeight = 130
+        if UITableViewAutomaticDimension > 130 {
             ttableView.rowHeight = UITableViewAutomaticDimension  //自動でセルの高さを調節してくれるやつ
         } else {
-            ttableView.rowHeight = 123
+            ttableView.rowHeight = 130
         }
         let nib = UINib(nibName: "ToukouListTableViewCell", bundle: nil)
         ttableView.register(nib, forCellReuseIdentifier: "postListCell")

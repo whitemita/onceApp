@@ -92,6 +92,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PP5-c8-0xt">
+                        <rect key="frame" x="317" y="17" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="：">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="iXd-VO-X1i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="1yc-GW-pJw"/>
@@ -127,7 +134,7 @@
                 <outlet property="userNameLabel" destination="HN7-sW-jRc" id="Yo8-Uu-sgz"/>
                 <outlet property="userProfilePic" destination="iXd-VO-X1i" id="34d-93-9IJ"/>
             </connections>
-            <point key="canvasLocation" x="-84.5" y="153"/>
+            <point key="canvasLocation" x="52.5" y="147"/>
         </tableViewCell>
     </objects>
     <resources>
