@@ -12,9 +12,11 @@ class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userProfilePic: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var postText: UILabel!
-    @IBOutlet weak var postImage: UIImageView!
     
+    @IBOutlet weak var postText: UILabel!
+    @IBOutlet weak var postTextHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var commentButton: UIButton!
     
@@ -37,14 +39,47 @@ class PostTableViewCell: UITableViewCell {
      
         userProfilePic.image! = post.user.profileImage
         userNameLabel.text! = post.user.fullName
-        postImage.image! = post.postImage
+//        postImage.image! = post.postImage
         postText.text! = post.postText
-        
+        labelSetting()
         currentUserDidLike = post.userDidLike
         
         changeLikeButtonState()           //状態をセットしておく
         
-        
+        constraints()
+    }
+    
+    func constraints(){
+        labelSetting()
+        imageSetting(rootImage: post.postImage)
+    }
+    
+    func labelSetting(){
+        // 最大行数を指定(0は無制限)
+        postText.numberOfLines = 0;
+        // セットした文字からUILabelの幅と高さを算出
+        let rect: CGSize = postText.sizeThatFits(CGSize(width: frame.width, height: CGFloat.greatestFiniteMagnitude))
+
+        // 算出された(幅と)高さをセット
+        //myLabel.frame = CGRect(x: 0, y: 0, width: rect.width, height: rect.height)
+        postTextHeight.constant = rect.height
+//        postTextWidth.constant = frame.width
+    }
+    func imageSetting(rootImage: UIImage) {
+        //画像のアスペクト比をpostImageViewにも制約として追加
+        postImage.image = rootImage
+        let constraint = NSLayoutConstraint(
+            item: postImage,
+            attribute:NSLayoutAttribute.height,
+            relatedBy:NSLayoutRelation.equal,
+            toItem: postImage,
+            attribute: NSLayoutAttribute.width,
+            multiplier: (rootImage.size.height) / (rootImage.size.width),
+            constant:0)
+            
+            NSLayoutConstraint.activate([constraint]
+        )
+        //imageのwidthを画面サイズに適用する
         let image:UIImage = UIImage(data: UIImagePNGRepresentation(post.postImage)! )!
         postImage.image = image
         let scale = UIScreen.main.bounds.size.width/image.size.width
@@ -52,11 +87,9 @@ class PostTableViewCell: UITableViewCell {
         postImage.frame = CGRect(
             x: postImage.frame.minX,
             y: postImage.frame.minY,
-            width: UIScreen.main.bounds.size.width-15,
+            width: UIScreen.main.bounds.size.width,
             height: scale*image.size.height)
-
     }
-    
     
     private func configureButtonAppearence() {
         

@@ -12,19 +12,18 @@ class TimeLineViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var post = Post.allPosts
+    
+    var post: [Post] = Post.allPosts
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        tableView.estimatedRowHeight = 300
-        tableView.rowHeight = UITableViewAutomaticDimension  //自動でセルの高さを調節してくれるやつ
         
         let nib = UINib(nibName: "PostTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "postCell")
-        
-        
+        tableView.showsVerticalScrollIndicator = false //スクロールバーを非表示にしている
+        tableView.estimatedRowHeight = 300
+        tableView.rowHeight = UITableViewAutomaticDimension  //自動でセルの高さを調節してくれるやつ
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,24 +50,24 @@ extension TimeLineViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         
-        func setThumbnailImage(image: UIImage?) {
-            
-            cell.postImage.image = image
-            
-            let constraint = NSLayoutConstraint(
-                item: cell.postImage,
-                attribute:NSLayoutAttribute.height,
-                relatedBy:NSLayoutRelation.equal,
-                toItem: cell.postImage,
-                attribute: NSLayoutAttribute.width,
-                multiplier: (image?.size.height)! / (image?.size.width)!,
-                constant:0)
-            
-            NSLayoutConstraint.activate([constraint])
-        }
-        setThumbnailImage(image: post[indexPath.row].postImage)
+//        //imageのwidthを元に、アスペクト比に準じてheightを決定
+//        func setThumbnailImage(image: UIImage?) {
+//            
+//            cell.postImage.image = image
+//            
+//            let constraint = NSLayoutConstraint(
+//                item: cell.postImage,
+//                attribute:NSLayoutAttribute.height,
+//                relatedBy:NSLayoutRelation.equal,
+//                toItem: cell.postImage,
+//                attribute: NSLayoutAttribute.width,
+//                multiplier: (image?.size.height)! / (image?.size.width)!,
+//                constant:0)
+//            
+//            NSLayoutConstraint.activate([constraint])
+//        }
+//        setThumbnailImage(image: post[indexPath.row].postImage)
         cell.post = post[indexPath.row]
-        
         return cell
     }
     
