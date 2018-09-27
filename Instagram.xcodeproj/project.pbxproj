@@ -13,7 +13,6 @@
 		D71084E120B484BB00A69D7D /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71084E020B484BB00A69D7D /* postViewController.swift */; };
 		D71B1EE021539EFC000C7E68 /* ToukouListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D764349321538786004B6835 /* ToukouListTableViewCell.xib */; };
 		D7524E5C20D631E2008BF377 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7524E5B20D631E2008BF377 /* LoginViewController.swift */; };
-		D764349521538786004B6835 /* ToukouListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764349421538786004B6835 /* ToukouListTableViewCell.swift */; };
 		D764349721538944004B6835 /* ToukouListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764349621538944004B6835 /* ToukouListViewController.swift */; };
 		D77E7175214D609C0047449C /* ToukouListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77E7174214D609C0047449C /* ToukouListViewController.storyboard */; };
 		D78D088D20D9897A00A931A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D088C20D9897900A931A3 /* SignUpViewController.swift */; };
@@ -33,6 +32,7 @@
 		D79A938820CE4E9000EC21D5 /* FindNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A938720CE4E9000EC21D5 /* FindNewViewController.swift */; };
 		D79A938A20CE543600EC21D5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A938920CE543600EC21D5 /* NavigationBar.swift */; };
 		D7A55BD8212D704D00ABDBAF /* setting_PerInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */; };
+		D7B2A336215D3CA600287E20 /* ToukouListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B2A335215D3CA600287E20 /* ToukouListTableViewCell.swift */; };
 		D7C696A62136EFCF00C5CF1D /* ContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C696A52136EFCF00C5CF1D /* ContentsView.xib */; };
 		D7D8611B21351F8A00562CB0 /* FollowListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D8611A21351F8A00562CB0 /* FollowListViewController.storyboard */; };
 		D7F23703213A64AF0003828E /* FollowListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */; };
@@ -52,7 +52,6 @@
 		D7503E9E20D4E5FE007EE235 /* Instagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Instagram.entitlements; sourceTree = "<group>"; };
 		D7524E5B20D631E2008BF377 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D764349321538786004B6835 /* ToukouListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToukouListTableViewCell.xib; sourceTree = "<group>"; };
-		D764349421538786004B6835 /* ToukouListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToukouListTableViewCell.swift; path = "/Users/TomitaYutaro/Desktop/Instagram/Instagram/設定/Mypage/followList/ToukouListTableViewCell.swift"; sourceTree = "<absolute>"; };
 		D764349621538944004B6835 /* ToukouListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToukouListViewController.swift; sourceTree = "<group>"; };
 		D77E7174214D609C0047449C /* ToukouListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToukouListViewController.storyboard; sourceTree = "<group>"; };
 		D78D088C20D9897900A931A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		D79A938720CE4E9000EC21D5 /* FindNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNewViewController.swift; sourceTree = "<group>"; };
 		D79A938920CE543600EC21D5 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting_PerInfo_ViewController.swift; sourceTree = "<group>"; };
+		D7B2A335215D3CA600287E20 /* ToukouListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToukouListTableViewCell.swift; sourceTree = "<group>"; };
 		D7C696A52136EFCF00C5CF1D /* ContentsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsView.xib; sourceTree = "<group>"; };
 		D7D8611A21351F8A00562CB0 /* FollowListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FollowListViewController.storyboard; sourceTree = "<group>"; };
 		D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowListTableViewCell.xib; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 			children = (
 				D7A55BD7212D704D00ABDBAF /* setting_PerInfo_ViewController.swift */,
 				D79A938520CE48C600EC21D5 /* settingViewController.swift */,
-				D7CC5776212E9FAF006A67D3 /* Mypage */,
+				D7CC5776212E9FAF006A67D3 /* Userpage */,
 			);
 			path = "設定";
 			sourceTree = "<group>";
@@ -195,16 +195,28 @@
 			path = "ログインサインアップ";
 			sourceTree = "<group>";
 		};
-		D7CC5776212E9FAF006A67D3 /* Mypage */ = {
+		D7B2A334215D3B1000287E20 /* ToukouList */ = {
+			isa = PBXGroup;
+			children = (
+				D77E7174214D609C0047449C /* ToukouListViewController.storyboard */,
+				D764349621538944004B6835 /* ToukouListViewController.swift */,
+				D764349321538786004B6835 /* ToukouListTableViewCell.xib */,
+				D7B2A335215D3CA600287E20 /* ToukouListTableViewCell.swift */,
+			);
+			path = ToukouList;
+			sourceTree = "<group>";
+		};
+		D7CC5776212E9FAF006A67D3 /* Userpage */ = {
 			isa = PBXGroup;
 			children = (
 				D7F9FC5D2131A69F00C2B774 /* ScrollTabPageViewController.storyboard */,
 				D7F9FC5E2131A69F00C2B774 /* ScrollTabPageViewController.swift */,
 				D7C696A52136EFCF00C5CF1D /* ContentsView.xib */,
 				D7F9FC632131A6EE00C2B774 /* ContentsView.swift */,
-				D7F23704213A6AB40003828E /* followList */,
+				D7F23704213A6AB40003828E /* follow-wer-List */,
+				D7B2A334215D3B1000287E20 /* ToukouList */,
 			);
-			path = Mypage;
+			path = Userpage;
 			sourceTree = "<group>";
 		};
 		D7F236FD213A4A4C0003828E /* タイムライン */ = {
@@ -225,19 +237,15 @@
 			path = "発見";
 			sourceTree = "<group>";
 		};
-		D7F23704213A6AB40003828E /* followList */ = {
+		D7F23704213A6AB40003828E /* follow-wer-List */ = {
 			isa = PBXGroup;
 			children = (
 				D7D8611A21351F8A00562CB0 /* FollowListViewController.storyboard */,
 				D7F9FC5B2131A49A00C2B774 /* FollowListViewController.swift */,
 				D7F23701213A64AF0003828E /* FollowListTableViewCell.xib */,
 				D7F23705213A6E7A0003828E /* FollowListTableViewCell.swift */,
-				D77E7174214D609C0047449C /* ToukouListViewController.storyboard */,
-				D764349621538944004B6835 /* ToukouListViewController.swift */,
-				D764349321538786004B6835 /* ToukouListTableViewCell.xib */,
-				D764349421538786004B6835 /* ToukouListTableViewCell.swift */,
 			);
-			path = followList;
+			path = "follow-wer-List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,7 +452,7 @@
 				D79A938820CE4E9000EC21D5 /* FindNewViewController.swift in Sources */,
 				D78DA54920A7962F00F248CA /* AppDelegate.swift in Sources */,
 				D71084E120B484BB00A69D7D /* postViewController.swift in Sources */,
-				D764349521538786004B6835 /* ToukouListTableViewCell.swift in Sources */,
+				D7B2A336215D3CA600287E20 /* ToukouListTableViewCell.swift in Sources */,
 				D78D088D20D9897A00A931A3 /* SignUpViewController.swift in Sources */,
 				D78DA58020AB322800F248CA /* Post.swift in Sources */,
 				D7F9FC602131A69F00C2B774 /* ScrollTabPageViewController.swift in Sources */,

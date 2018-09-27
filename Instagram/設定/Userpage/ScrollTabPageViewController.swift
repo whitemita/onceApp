@@ -15,6 +15,8 @@ protocol ScrollTabPageViewControllerProtocol {
 
 class ScrollTabPageViewController: UIPageViewController {
 
+
+    
     var pageViewControllers: [UIViewController] = []
     
     // pageViewControllerの更新index
@@ -32,6 +34,17 @@ class ScrollTabPageViewController: UIPageViewController {
     var statusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
     var navigationBarHeight : CGFloat?
     
+    var user: User! {
+        didSet{
+            updateUser()
+        }
+        
+    }
+    
+    func updateUser() {
+       
+    }
+    
     // tabViewControllerの現在のindex
     var currentIndex: Int? {
         guard let viewController = viewControllers?.first, let index = pageViewControllers.index(of: viewController) else {
@@ -45,6 +58,7 @@ class ScrollTabPageViewController: UIPageViewController {
         navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
         //エラー吐かないように仮の値を設定しているだけ
         if ( navigationBarHeight == nil) {navigationBarHeight = 0}
+        
         
         self.setupOutlets()
 
@@ -61,6 +75,8 @@ extension ScrollTabPageViewController {
         setupViewControllers()
         setupContentsView()
         setupPageViewController()
+        //user情報の設定
+        contentsView.user = self.user
     }
 
     // viewControllerをセットアップ
@@ -102,6 +118,7 @@ extension ScrollTabPageViewController {
     // contentsViewのセットアップ
     func setupContentsView() {
         contentsView = ContentsView(frame: CGRect(x:0.0, y:0.0, width:view.frame.width, height:contentViewHeight))
+        
         // タブボタンがタップされた時のブロック
         contentsView.tabButtonPressedBlock = { [weak self] (index: Int) in
             guard let uself = self else {
@@ -123,6 +140,7 @@ extension ScrollTabPageViewController {
                         uself.shouldUpdateLayout = false
                     }
                 })
+            
         }
 
         // contentViewのスクロール表示が変更された時のブロック
@@ -131,6 +149,8 @@ extension ScrollTabPageViewController {
             // Y座標を更新する
             self?.updateContentOffsetY(scroll: scroll)
         }
+        //user情報の設定
+        contentsView.user = self.user
         view.addSubview(contentsView)
     }
 }

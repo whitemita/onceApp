@@ -65,15 +65,14 @@ class settingViewController: UITableViewController {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 let storyboard: UIStoryboard = UIStoryboard(name: "ScrollTabPageViewController", bundle: nil)
-                let nextView = storyboard.instantiateInitialViewController()
-                self.navigationController!.pushViewController(nextView!, animated: true)
+                let nextView = storyboard.instantiateInitialViewController() as! ScrollTabPageViewController
+//ここでユーザーを登録しているので、自分の情報を代入する
+                nextView.user = User.allUsers()[2]
+                self.navigationController!.pushViewController(nextView, animated: true)
 
 //                self.performSegue(withIdentifier: "mypageSegue", sender: nil)
             }
             if indexPath.row == 1 {
-                let storyboard: UIStoryboard = UIStoryboard(name: "ShowToukouViewController", bundle: nil)
-                let nextView = storyboard.instantiateInitialViewController()
-                self.navigationController!.pushViewController(nextView!, animated: true)
 
             }
         } else if indexPath.section == 1 {

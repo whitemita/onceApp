@@ -31,11 +31,23 @@ class TimeLineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func openMypage(openUser: User) {
+//        let storyboard: UIStoryboard = self.storyboard!
+//        let nextView = storyboard.instantiateViewController(withIdentifier: "ScrollTabPageViewControllerView") as! ScrollTabPageViewController
+//        nextView.user = openUser
+//        self.navigationController?.pushViewController(nextView, animated: true)
+        let storyboard: UIStoryboard = UIStoryboard(name: "ScrollTabPageViewController", bundle: nil)
+        let nextView = storyboard.instantiateInitialViewController() as! ScrollTabPageViewController
+        //ここでユーザーを登録しているので、自分の情報を代入する
+        nextView.user = openUser
+        self.navigationController!.pushViewController(nextView, animated: true)
 
+    }
+    
 }
 
 
-extension TimeLineViewController: UITableViewDataSource {
+extension TimeLineViewController: UITableViewDataSource,TableViewCellDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -49,27 +61,11 @@ extension TimeLineViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
-        
-//        //imageのwidthを元に、アスペクト比に準じてheightを決定
-//        func setThumbnailImage(image: UIImage?) {
-//            
-//            cell.postImage.image = image
-//            
-//            let constraint = NSLayoutConstraint(
-//                item: cell.postImage,
-//                attribute:NSLayoutAttribute.height,
-//                relatedBy:NSLayoutRelation.equal,
-//                toItem: cell.postImage,
-//                attribute: NSLayoutAttribute.width,
-//                multiplier: (image?.size.height)! / (image?.size.width)!,
-//                constant:0)
-//            
-//            NSLayoutConstraint.activate([constraint])
-//        }
-//        setThumbnailImage(image: post[indexPath.row].postImage)
         cell.post = post[indexPath.row]
+        cell.delegate = self
         return cell
     }
+
     
 }
 

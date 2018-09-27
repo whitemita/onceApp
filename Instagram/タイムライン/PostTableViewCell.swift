@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol TableViewCellDelegate: class{
+    func openMypage(openUser: User)
+    
+}
+
 class PostTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var userProfilePic: UIImageView!
+
+    @IBOutlet weak var userProfilePic: UIButton!
     @IBOutlet weak var userNameLabel: UILabel!
     
     @IBOutlet weak var postText: UILabel!
@@ -22,6 +28,8 @@ class PostTableViewCell: UITableViewCell {
     
     private var currentUserDidLike: Bool = false
     
+    var delegate: TableViewCellDelegate!
+    
     var post: Post! {
         didSet{
             updateUI()
@@ -29,7 +37,7 @@ class PostTableViewCell: UITableViewCell {
         
     }
     
-    func updateUI() {                                                      //didsetした時に画面上に表示することをかく
+    func updateUI() {
         
         userProfilePic.layer.cornerRadius = userProfilePic.bounds.width/2  //画像を円にする
 //        postImage.layer.cornerRadius = 5.0                                 //丸みが5.0
@@ -37,7 +45,7 @@ class PostTableViewCell: UITableViewCell {
         userProfilePic.clipsToBounds = true
 //        postImage.clipsToBounds = true                                     //この２行で変更を有効(?)にする
      
-        userProfilePic.image! = post.user.profileImage
+        userProfilePic.setImage(post.user.profileImage, for: .normal)
         userNameLabel.text! = post.user.fullName
 //        postImage.image! = post.postImage
         postText.text! = post.postText
@@ -65,6 +73,7 @@ class PostTableViewCell: UITableViewCell {
         postTextHeight.constant = rect.height
 //        postTextWidth.constant = frame.width
     }
+    
     func imageSetting(rootImage: UIImage) {
         //画像のアスペクト比をpostImageViewにも制約として追加
         postImage.image = rootImage
@@ -140,6 +149,9 @@ class PostTableViewCell: UITableViewCell {
             
         }
         
+    }
+    @IBAction func userProfileButton_pushed(_ sender: Any) {
+        self.delegate?.openMypage(openUser: post.user)
     }
     
 

@@ -11,6 +11,18 @@ import XLPagerTabStrip
 
 class ContentsView: UIView {
 
+    var user: User! {
+        didSet{
+            //user情報の設定
+            userNameLabel.text = user.fullName
+            userIdLabel.text = user.id
+            headerImage.image = user.profileHeaderImage
+            userSelfIntroLabel.text = user.selfIntro
+        }
+        
+    }
+    
+    
     // 選択されているtabボタンのindex
     var currentIndex: Int = 0
     
@@ -23,6 +35,11 @@ class ContentsView: UIView {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var headerImage: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userIdLabel: UILabel!
+    @IBOutlet weak var userSelfIntroLabel: UILabel!
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var segmentedControlWidth: NSLayoutConstraint!
     @IBOutlet weak var segmentedControlHeight: NSLayoutConstraint!
@@ -60,7 +77,7 @@ class ContentsView: UIView {
 
 extension ContentsView {
 
-    // 制約を更新 & 初期設定している
+    // 制約を更新 & 初期設定などを行う
     func setupConstraints() {
         let topConstraint = NSLayoutConstraint(item: contentView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 20.0)
 
@@ -75,6 +92,13 @@ extension ContentsView {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         addConstraints(constraints)
 
+        segmentSetting()
+
+       
+    }
+    
+    
+    func segmentSetting(){
         //選択されたsegmentItemの下線部の実現
         segmentItemWidth = self.frame.width / 4
         selectItemLineLayer.backgroundColor = UIColor.black.cgColor
@@ -100,7 +124,6 @@ extension ContentsView {
         let attribute2 = [NSAttributedStringKey.foregroundColor:UIColor.black]
         segmentedControl.setTitleTextAttributes(attribute, for: UIControlState.normal)
         segmentedControl.setTitleTextAttributes(attribute2, for: UIControlState.selected)
-
     }
 
     /**
